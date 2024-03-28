@@ -113,6 +113,8 @@ export const getMessageFromFirebaseAuthError = (code) => {
       return "Usuario no encontrado.";
     case "auth/invalid-login-credentials":
       return "Credenciales no válidas.";
+    case "auth/account-exists-with-different-credential":
+      return "Cuenta ya existe con otra credencial.";
     default:
       return "Error al iniciar sesión. Intenta de nuevo.";
   }
