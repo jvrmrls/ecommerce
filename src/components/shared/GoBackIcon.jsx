@@ -30,6 +30,7 @@ function GoBackIcon({ styles = {}, containerStyle = {} }) {
         return;
       }
       navigate(pathnameToGo, { replace: true });
+      return;
     }
     navigate(-1);
   };
