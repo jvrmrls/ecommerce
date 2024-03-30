@@ -4,7 +4,7 @@ import OrderStepper
 import SemiBold18 from "#/components/shared/fonts/SemiBold18.jsx";
 import { ORDER_STEPS, SUPPORT_WHATSAPP } from "#/config/constants.js";
 import Regular14 from "#/components/shared/fonts/Regular14.jsx";
-import { format } from "date-fns";
+import { format, formatDistanceStrict,differenceInCalendarDays , isTomorrow } from "date-fns";
 import OrderGeneralDetails
   from "#/components/domain/orderTracking/OrderGeneralDetails.jsx";
 import Divider from "@mui/material/Divider";
@@ -21,12 +21,24 @@ import HavingTroublesContainer
   from "#/components/shared/HavingTroublesContainer.jsx";
 import WhatsappIcon from "#/components/shared/icons/WhatsappIcon.jsx";
 import GmailIcon from "#/components/shared/icons/GmailIcon.jsx";
+import { es } from "date-fns/locale";
+import Regular12 from "#/components/shared/fonts/Regular12.jsx";
+import Chip from "@mui/material/Chip";
 
 const OrderDetailContainer = ({ order }) => {
 
   const activeStepIndex = useMemo(()=>{
     return ORDER_STEPS.findIndex(step => step?.value === order?.status)
   }, [order?.status])
+
+  const isCloseDate = useMemo(()=>{
+      const isTomorrowB = isTomorrow(new Date(order?.deliveryDate))
+      if(isTomorrowB) return 'mañana'
+      const daysCounter = differenceInCalendarDays(new Date(order?.deliveryDate), new Date())
+      if(daysCounter > 0) return null
+      const distance = formatDistanceStrict (new Date(), new Date(order?.deliveryDate),{locale: es})
+      return `en ${distance}`
+  }, [order?.deliveryDate])
 
   return (
     <>
@@ -39,6 +51,12 @@ const OrderDetailContainer = ({ order }) => {
           <Regular14 styles={{color: t => t?.palette?.neutral60?.main}}>
             Entrega estimada: {format(new Date(order?.deliveryDate), "dd/MM - hh:mm a")}
           </Regular14>
+          {
+            !!isCloseDate && (
+              <Chip label={`¡Recibirás tu pedido ${isCloseDate}!`}  className={"w-full"} />
+            )
+          }
+
         </Box>
         <OrderProductsDetails menu={order?.menu}/>
         <SemiBold20 className={'text-right'}>
