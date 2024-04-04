@@ -7,7 +7,7 @@ import StoreIcon from "#/components/shared/icons/StoreIcon.jsx";
 import TouchRippleEffect from "#/components/shared/TouchRippleEffect.jsx";
 import CheckIcon from "#/components/shared/icons/CheckIcon.jsx";
 
-const PickupSelector = ({isSelected, handleEvent}) => {
+const PickupSelector = ({isSelected, handleEvent, disabled = false}) => {
   const handleClick = () => {
     if (typeof handleEvent === "function") handleEvent(1);
   }
@@ -15,6 +15,7 @@ return (
   <Box className={"relative" }
         sx={{
           bgcolor: isSelected ? "primary10.main" : "background.paper",
+          opacity: disabled ? 0.5 : 1,
         }}
     onClick={handleClick}
   >

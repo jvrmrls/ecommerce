@@ -12,7 +12,8 @@ export default function ShippingContainer() {
   const location = useLocationState();
   useEffect(() => {
     if (location?.deliveryMethod === null) {
-      location?.setDeliveryMethod(DELIVERY_METHODS[0]?.value);
+      location?.setDeliveryMethod(DELIVERY_METHODS?.find((method) => method?.isActive)?.value);
+      // location?.setDeliveryMethod(DELIVERY_METHODS[0]?.value);
     }
   }, []);
 

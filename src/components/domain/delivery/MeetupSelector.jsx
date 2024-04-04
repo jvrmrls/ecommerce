@@ -5,7 +5,7 @@ import SemiBold16 from "#/components/shared/fonts/SemiBold16.jsx";
 import PointOfMapIcon  from "#/components/shared/icons/PointOfMapIcon.jsx";
 import TouchRippleEffect from "#/components/shared/TouchRippleEffect.jsx";
 import CheckIcon from "#/components/shared/icons/CheckIcon.jsx";
-const MeetupSelector = ({isSelected, handleEvent}) => {
+const MeetupSelector = ({isSelected, handleEvent, disabled = false}) => {
   const handleClick = () => {
     if (typeof handleEvent === "function") handleEvent(2);
   }
@@ -13,6 +13,7 @@ return (
   <Box className={"relative" }
        sx={{
          bgcolor: isSelected ? "primary10.main" : "background.paper",
+         opacity: disabled ? 0.5 : 1,
        }}
     onClick={handleClick}
   >

@@ -73,9 +73,9 @@ export const CHECKOUT_STEPS = {
 
 
 export const DELIVERY_METHODS = [
-  { label: "Recoger en tienda", value: "PICKUP" },
-  // { label: "Entrega a domicilio", value: "DELIVERY" },
-  { label: "Punto de encuentro", value: "MEETUP" },
+  { label: "Recoger en tienda", value: "PICKUP", isActive: true },
+  { label: "Entrega a domicilio", value: "DELIVERY", isActive: false },
+  { label: "Punto de encuentro", value: "MEETUP", isActive: true },
 ]
 
 export const PAYMENT_METHODS = [
