@@ -22,7 +22,7 @@ export const IMAGES_TYPES = {
   PRODUCT: "PRD",
 };
 
-export const SUPPORT_EMAIL = "javiermoralesmelara@gmail.com";
+export const SUPPORT_EMAIL = "soporte@aleartsv.com";
 export const SUPPORT_WHATSAPP = "50372709725";
 
 export const FADE_ANIMATION = {
