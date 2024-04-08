@@ -7,6 +7,7 @@ import TouchRippleEffect from "#/components/shared/TouchRippleEffect.jsx";
 import CheckIcon from "#/components/shared/icons/CheckIcon.jsx";
 const MeetupSelector = ({isSelected, handleEvent, disabled = false}) => {
   const handleClick = () => {
+    if(disabled) return;
     if (typeof handleEvent === "function") handleEvent(2);
   }
 return (

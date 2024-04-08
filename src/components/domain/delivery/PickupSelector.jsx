@@ -9,6 +9,7 @@ import CheckIcon from "#/components/shared/icons/CheckIcon.jsx";
 
 const PickupSelector = ({isSelected, handleEvent, disabled = false}) => {
   const handleClick = () => {
+    if(disabled) return;
     if (typeof handleEvent === "function") handleEvent(1);
   }
 return (

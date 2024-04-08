@@ -8,6 +8,7 @@ import CheckIcon from "#/components/shared/icons/CheckIcon.jsx";
 const DeliverySelector = ({isSelected, handleEvent, disabled = false}) => {
 
   const handleClick = () => {
+    if(disabled) return;
     if (typeof handleEvent === "function") handleEvent(0);
   }
   return (
