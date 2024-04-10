@@ -94,75 +94,75 @@ export const ORDER_STEPS = [
 export const PAGES = {
   feed: {
     title: "Feed",
-    desc: `Pagina de inicio en ${COMPANY}`,
+    desc: `Descubre las últimas novedades y ofertas emocionantes en Aleartsv.com, tu destino para arreglos florales, cuadros personalizados y más. ¡Explora ahora!`,
   },
   menu: {
     title: "Menú",
-    desc: `Pagina de menú en ${COMPANY}`,
+    desc: `Explora nuestro completo menú de productos en Aleartsv.com. Desde exquisitas flores naturales hasta deliciosos snacks preparados, tenemos algo para todos los gustos.`,
   },
   profile: {
     title: "Perfil",
-    desc: `Pagina de perfil en ${COMPANY}`,
+    desc: `Gestiona tu perfil personal en Aleartsv.com para una experiencia de compra personalizada. Actualiza tus preferencias, revisa tu historial de pedidos y más en un solo lugar.`,
   },
   login: {
     title: "Iniciar Sesión",
-    desc: `Pagina de inicio de sesión en ${COMPANY}`,
+    desc: `Accede a tu cuenta en Aleartsv.com para disfrutar de una experiencia de compra fluida y segura. ¡Bienvenido de vuelta!`,
   },
   addAddress: {
     title: "Agregar Dirección",
-    desc: `Pagina de agregar dirección en ${COMPANY}`,
+    desc: `Agrega una nueva dirección de entrega a tu cuenta en Aleartsv.com para recibir tus pedidos en el lugar que elijas. ¡Hazlo fácilmente con unos pocos clics!`,
   },
   ordersAndMessages: {
     title: "Pedidos y Mensajes",
-    desc: `Pagina de pedidos y mensajes en ${COMPANY}`,
+    desc: `Mantente al tanto de tus pedidos y comunicaciones importantes en Aleartsv.com. Revisa el estado de tus envíos y comunícate con nuestro equipo de atención al cliente cuando lo necesites.`,
   },
   register: {
     title: "Registro",
-    desc: `Pagina de registro en ${COMPANY}`,
+    desc: `Regístrate en Aleartsv.com para acceder a ofertas exclusivas, guardar tus productos favoritos y realizar un seguimiento fácil de tus pedidos. ¡Únete a nuestra comunidad hoy mismo!`,
   },
   dateAndTime: {
     title: "Fecha y Hora",
-    desc: `Pagina de fecha y hora en ${COMPANY}`,
+    desc: `Selecciona la fecha y hora de entrega perfectas para tus pedidos en Aleartsv.com. Personaliza tu experiencia de compra para adaptarse a tu agenda ocupada.`,
   },
   orderConfirmation: {
     title: "Confirmación de Orden",
-    desc: `Pagina de confirmación de orden en ${COMPANY}`,
+    desc: `Confirma tu pedido en Aleartsv.com y prepárate para recibir tus productos seleccionados con emocionantes arreglos florales, cuadros personalizados y más.`,
   },
   cart: {
     title: "Carrito",
-    desc: `Pagina de carrito en ${COMPANY}`,
+    desc: `Revisa y edita los productos en tu carrito de compras en Aleartsv.com antes de proceder al pago. ¡Asegúrate de no perder ninguna de tus selecciones favoritas!`,
   },
   products: {
     title: "Productos",
-    desc: `Pagina de productos de ${COMPANY}`,
+    desc: `Explora nuestra amplia selección de productos en Aleartsv.com. Desde impresionantes arreglos florales hasta cuadros personalizados y más, encuentra el regalo perfecto para cualquier ocasión.`,
   },
   product: {
     title: "Producto",
-    desc: `Pagina de producto de ${COMPANY}`,
+    desc: `Descubre más sobre este emocionante producto en Aleartsv.com. Detalles, opciones de personalización y más te esperan mientras exploras nuestra colección de artículos únicos y encantadores.`,
   },
   loading: {
     title: "Cargando",
-    desc: `Pagina de carga de ${COMPANY}`,
+    desc: `Por favor, espera mientras cargamos tu contenido en Aleartsv.com. ¡Estamos preparando una experiencia de compra excepcional para ti!`,
   },
   checkout: {
     title: "Pago",
-    desc: `Pagina de pago de ${COMPANY}`,
+    desc: `Completa tu compra de manera segura y conveniente en Aleartsv.com. Selecciona tus métodos de pago preferidos y finaliza tu pedido con confianza.`,
   },
   delivery: {
     title: "Método de Entrega",
-    desc: `Pagina de método de entrega de ${COMPANY}`,
+    desc: `Elige el método de entrega que mejor se adapte a tus necesidades en Aleartsv.com. Desde envíos estándar hasta opciones de entrega express, asegúrate de recibir tus productos a tiempo y en perfectas condiciones.`,
   },
   settings: {
     title: "Ajustes",
-    desc: `Pagina de ajustes de ${COMPANY}`,
+    desc: `Personaliza tu experiencia de compra en Aleartsv.com ajustando tus preferencias y configuraciones. Desde notificaciones de pedidos hasta preferencias de cuenta, haz que tu experiencia sea única y personal.`,
   },
   signup: {
     title: "Registro",
-    desc: `Pagina de registro de ${COMPANY}`,
+    desc: ` Regístrate en Aleartsv.com para acceder a ofertas exclusivas, guardar tus productos favoritos y disfrutar de una experiencia de compra personalizada. ¡Únete a nuestra comunidad hoy mismo!`,
   },
   signup_checkout: {
     title: "Registro",
-    desc: `Pagina de registro en compra de ${COMPANY}`,
+    desc: ` Regístrate durante el proceso de compra en Aleartsv.com para agilizar tus pedidos futuros y recibir actualizaciones sobre el estado de tus envíos. ¡Haz que tu experiencia de compra sea aún más conveniente y fácil!`,
   },
   coupons: {
     title: "Cupones y Gift Cards",
