@@ -25,7 +25,9 @@ export default function OffersContainer() {
   if (!offeredProducts?.length) return null;
   return (
     <Box sx={style.container}>
-      <SemiBold18>Productos en oferta</SemiBold18>
+      <h2>
+        <SemiBold18>Productos en oferta</SemiBold18>
+      </h2>
       <HorizontalScroller>
         {offeredProducts?.map((item) => (
           <Box key={item?._id} className="min-w-[140px] w-[140px] h-[258px] my-1 ">

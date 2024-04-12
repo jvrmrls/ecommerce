@@ -13,9 +13,11 @@ const FavoritesShortcutContainer = ({ favorites }) => {
 
   return (
     <Box className={"w-full min-h-[60px] flex flex-col gap-0"}>
-      <SemiBold18>
-        Favoritos
-      </SemiBold18>
+      <h2>
+        <SemiBold18>
+          Favoritos
+        </SemiBold18>
+      </h2>
       <HorizontalScroller separate showScrollbar>
         {
           favorites?.map((favorite, index) => (

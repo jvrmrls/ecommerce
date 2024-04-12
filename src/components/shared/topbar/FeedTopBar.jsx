@@ -25,7 +25,9 @@ function FeedTopBar({ title }) {
             <ShoppingBagOutlinedIcon />
           </IconButton> */}
           <Box />
-          <SemiBold18 className="text-center">{title}</SemiBold18>
+          <h1>
+            <SemiBold18 className="text-center">{title}</SemiBold18>
+          </h1>
           {/* <IconButton
             aria-label="search"
             variant="contained"

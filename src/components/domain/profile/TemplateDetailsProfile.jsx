@@ -5,8 +5,8 @@ import SemiBold32 from "#/components/shared/fonts/SemiBold32";
 function TemplateDetailsProfile({ title, subtitle }) {
   return (
     <Box sx={style.container}>
-      {title && <SemiBold32>{title}</SemiBold32>}
-      {subtitle && <Regular12 styles={style.email}>{subtitle}</Regular12>}
+      {title && <h1><SemiBold32>{title}</SemiBold32></h1>}
+      {subtitle && <h2><Regular12 styles={style.email}>{subtitle}</Regular12></h2>}
     </Box>
   );
 }

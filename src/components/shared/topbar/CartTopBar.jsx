@@ -142,7 +142,9 @@ function CartTopBar({ title }) {
               <GoBackIcon />
             </IconButton>
             {title ? (
-              <SemiBold18 className="text-center">{title}</SemiBold18>
+              <h1>
+                <SemiBold18 className="text-center">{title}</SemiBold18>
+              </h1>
             ) : (
               <Box />
             )}

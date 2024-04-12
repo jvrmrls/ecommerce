@@ -54,11 +54,11 @@ function RegisterPage() {
     <Container sx={style.container}>
       <HelmetMeta page="register" />
       <Box sx={style.welcome}>
-        <SemiBold18>Bienvenido</SemiBold18>
-        <Regular14>
+        <h1><SemiBold18>Bienvenido</SemiBold18></h1>
+        <h2><Regular14>
           Regístrate para acceder a todos los beneficios de la plataforma y
           disfrutar de una experiencia personalizada.
-        </Regular14>
+        </Regular14></h2>
       </Box>
       <RegisterForm
         showPassword={showPassword}
